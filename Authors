@@ -1,0 +1,144 @@
+/* Create table about the people and what they do here */
+
+CREATE TABLE Authors (id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, Book_Title TEXT, Publish_Date INTEGER, Genre TEXT, Best_Seller_Position INTEGER);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("Colleen Hoover", "It Starts With Us", 2022, "Romance", 1);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ( "Colleen Hoover", "It Ends With Us", 2016, "Romance", 2);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("J.K. Rowling", "Harry Potter and the Order of the Phoenix:The Illustrated edition", 2022, "Fantasy Fiction", 3);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("Colleen Hoover", "Verity", 2021, "Thriller", 4);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("James Clear", "Atomic Habits", 2018, "Self-Help", 5);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("Jannette McCurdy", "I'm Glad My Mom Died", 2022,"Biography", 6);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("Maggie Haberman", "Confidence Man: The Making of Donald Trump and The Breaking of America", 2022, "American Politics", 7);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("Robert Greene", "The 48 Laws of Power", 2000, "Self-Help", 8);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("Raymond Arroyo", "The Wise Men Who Found Christmas", 2022, "Children's Literature", 9);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("Jeff Kinney", "Diary of a Wimpy Kid: Diper Overlode", 2022, "Young Adult Fiction", 10);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("Eric Carle", "The Very Hungry Caterpillar", 1994, "Childrens Literature", 11);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("Alice Schertle", "Little Blue Truck's Halloween", 2016, "Childrens Literature", 12);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("Colleen Hoover", "Reminders of Him: A Novel", 2022, "Romance", 13);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Paul Newman", "The Extraordinary Life of an Ordinary Man: A Memoir", 2022, "Biography",14);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES ("Bessel van der Kolk M.D.", "The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma", 2015, "Science", 15);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Jodi Picoult", "Mad Honey: A Novel", 2022, "Literary Fiction", 16);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Ainsley Earhardt", "I'm So Glad You Were Born: Celebrating Who You Are", 2022, "Childrens Literature",17);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Colleen Hoover", "Ugly Love: A Novel", 2022, "Romance", 18);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Stephen King", "Fairy Tale", 2022, "Thriller",19);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Ina Garten", "Go-To Dinners: A Barefoot Contessa Cookbook", 2022, "Cooking",20);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Delia Owens", "Where the Crawdads Sing",2021, "Romance", 21);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Amelia Hepworth", "I Love You to the Moon and Back", 2015, "Childrens Literature", 22);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Yung Pueblo", "Lighter: Let Go of the Past, Connect with the Present, Expand the Future", 2022, "Self-Help", 23);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Anthony William", "Medical Medium Brain Saver", 2022, "Science",24);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Sandra Boynton", "Spooky Pookie", 07/25/2017, "Childrens Literature",25);
+
+INSERT INTO Authors (id, Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES(26, "Rush Limbaugh", "Radio's Greatest of All Time", 2022, "American Politics", 26);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Bill Martin Jr.", "Brown Bear, Brown Bear, What Do You See?", 1996, "Childrens Literature", 27);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Jessica Knoll", "Luckiest Girl Alive", 2016, "Thriller", 28);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Taylor Jenkins Reid", "The Seven Husbands of Evelyn Hugo: A Novel", 2018, "Romance", 29);
+
+INSERT INTO Authors (Name, Book_Title, Publish_Date, Genre, Best_Seller_Position) VALUES("Crystal Radke", "My First Learn-to-Write Workbook", 2019, "Chidlrens Education", 30);
+
+CREATE TABLE Sales_Record (id INTEGER PRIMARY KEY AUTOINCREMENT, Book_id TEXT, Genre TEXT, Copies_Sold INTEGER);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("It Starts With Us", "Romance", 1000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("It Ends With Us", "Romance",4000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Harry Potter and the Order of the Phoenix: The Illustrated Edition", "Fantasy Fiction", 2000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Verity", "Thriller", 900000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Atomic Habits", "Self-Help", 5000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("I'm Glad My Mom Died","Biography", 200000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Confidence Man: The Making of Donald Trump and The Breaking of America","American Politics",750000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("The 48 Laws of Power", "Self-Help", 1200000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("The Wise Men Who Found Christmas", "Childrens Literature", 200000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("The Diary of Wimpy Kid: Diper Overload", "Young Adult Fiction", 4000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("The Very Hungry Catepillar", "Childrens Literature", 55000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Little Blue Truck's Halloween", "Childrens Literature", 8000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Reminders of Him: A Novel", "Romance", 950000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("The Extraordinary Life of an Ordinary Man: A Memoir", "Biography", 500000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma", "Science", 2000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Mad Honey", "Literary Fiction", 350000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("I'm So Glad You Were Born: Celebrating Who You Are", "Childrens Literature",800000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Ugly Love: A Novel", "Romance", 850000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Fairy Tale", "Thriller", 1000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Go-To Dinners: A Barefoot Contessa Cookbook", "Cooking", 650000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Where the Crawdads Sing", "Romance", 15000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("I Love You To the Moon and Back", "Childrens Literature", 50000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Lighter: Let Go of the Past, Connect with the Present, Expand the Future", "Self-Help", 2000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Medical Medium Brain Saver", "Science", 1500000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Spooky Pookie", "Childrens Literature", 4000000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Radio's Greatest of All Time", "Biography", 975000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Brown Bear, Brown Bear, What Do You See?", "Childrens Literature" , 2500000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("Luckiest Girl Alive", "Thriller", 450000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("The Seven Husbands of Evelyn Hugo: A Novel", "Romance", 1500000);
+
+INSERT INTO Sales_Record (Book_id, Genre, Copies_Sold) Values ("My First Learn-to-Write Workbook", "Chidlrens Education", 870000);
+
+Select * from Authors;
+
+Select * from Sales_Record;
+
+/* Display Authors, Title and Copies Sold*/
+
+Select Authors.Book_Title, Authors.Name,Authors.Best_Seller_Position, Sales_Record.Copies_Sold
+from Authors
+Join Sales_Record
+On Authors.Book_Title=Sales_Record.Book_id;
+
+/*Display the Total Copies sold in Each Genre*/
+
+Select Authors.Genre, Sum(Sales_Record.Copies_Sold)
+From Authors 
+Join Sales_Record
+On Authors.Book_Title=Sales_Record.Book_id
+Group by Authors.Genre;
