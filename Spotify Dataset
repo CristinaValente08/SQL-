@@ -57,3 +57,13 @@ Select Artist_Name, Track_Name, Max(Duration_ms) from BIT_DB0.Spotify_Dataset;
 /*The Shortest Song*/
 
 Select Artist_Name, Track_Name, Min(Duration_ms) from BIT_DB0.Spotify_Dataset;
+
+/*Most Lively Song*/
+
+Select Max(Liveness), Artist_Name, Track_Name from BIT_DB0.Spotify_Dataset;
+
+/*Least Liveley Song*?
+
+Select min(Liveness), Artist_Name, Track_Name from BIT_DB0.Spotify_Dataset;
+
+
