@@ -34,6 +34,13 @@ Select * from BIT_DB0.Spotify_Dataset;
 
 Select Artist_Name, Track_Name, Popularity from BIT_DB0.Spotify_Dataset Order by Popularity Limit 10;
 
+/* Average Popularity for the Artists*/
+
+With popularity_average_CTE AS (
+Select s.Artist_name, AVG(S.Popularity) as Average_Popularity 
+from Spotify_Dataset s 
+Group by s.Artist_Name)
+Select Artist_name, Average_Popularity, 'Top Star' As Tag Where Average_Popularity >=90;
 /* Average popularity, danceability, and energy by artist and track */
 
 Select Artist_Name, Track_Name, avg(Popularity), avg (Danceability), avg(Energy) from BIT_DB0.Spotify_Dataset Group by Artist_Name, Track_Name;
