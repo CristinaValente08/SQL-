@@ -1,0 +1,59 @@
+-- For this project, I downloaded Spotify data from Kaggle.
+-- Created a table to insert Spotify data into.
+-- Performed analytics on the data using SQL. 
+
+-- Creating the table: 
+CREATE TABLE BIT_DB.Spotifydata (
+id integer PRIMARY KEY,
+artist_name varchar NOT NULL,
+track_name varchar NOT NULL,
+track_id varchar NOT NULL,
+popularity integer NOT NULL,
+danceability decimal(4,3) NOT NULL,
+energy decimal(4,3) NOT NULL,
+key integer NOT NULL,
+loudness decimal(5,3) NOT NULL,
+mode integer NOT NULL,
+speechiness decimal(5,4) NOT NULL,
+acousticness decimal(6,5) NOT NULL,
+instrumentalness text NOT NULL,
+liveness decimal(5,4) NOT NULL,
+valence decimal(4,3) NOT NULL,
+tempo decimal(6,3) NOT NULL,
+duration_ms integer NOT NULL,
+time_signature integer NOT NULL 
+)
+
+-- Then I inserted the Spotify Data .csv into the table.
+
+-- Next, I explored the data using the following SQL. 
+
+Select * from BIT_DB0.Spotify_Dataset;
+
+/* Top 10 Popular  Artist and the Track*/
+
+Select Artist_Name, Track_Name, Popularity from BIT_DB0.Spotify_Dataset Order by Popularity Limit 10;
+
+/* Average popularity, danceability, and energy by artist and track */
+
+Select Artist_Name, Track_Name, avg(Popularity), avg (Danceability), avg(Energy) from BIT_DB0.Spotify_Dataset Group by Artist_Name, Track_Name;
+
+/* The least Energetic Track */
+
+Select Artist_Name, Track_Name, Min(Energy) from BIT_DB0.Spotify_Dataset;
+
+/*The Most Energetic Track*/
+
+Select Artist_Name, Track_Name, Max(Energy) from BIT_DB0.Spotify_Dataset;
+
+/*The Top 10 Liveness of the tracks*/
+
+Select Track_Name, Liveness from BIT_DB0.Spotify_Dataset Limit 10;
+
+/* The Longest Song*/
+
+Select Artist_Name, Track_Name, Max(Duration_ms) from BIT_DB0.Spotify_Dataset;
+
+/*The Shortest Song*/
+
+Select Artist_Name, Track_Name, Min(Duration_ms) from BIT_DB0.Spotify_Dataset;
