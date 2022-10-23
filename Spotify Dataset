@@ -66,4 +66,8 @@ Select Max(Liveness), Artist_Name, Track_Name from BIT_DB0.Spotify_Dataset;
 
 Select min(Liveness), Artist_Name, Track_Name from BIT_DB0.Spotify_Dataset;
 
+/*Average Time of a song*/
+
+Select Avg(Time_Signature) from BIT_DB0.Spotify_Dataset;
+
 
