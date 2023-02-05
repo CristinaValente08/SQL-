@@ -1177,3 +1177,6 @@ INSERT INTO Race_Results_2022 (ID, "Grand Prix", Date, Winner, Car) VALUES (22, 
 
 COMMIT TRANSACTION;
 PRAGMA foreign_keys = on;
+
+
+/* All the data above has been sourced from: https://www.formula1.com/en/results.html */
